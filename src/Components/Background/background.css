@@ -1,0 +1,24 @@
+.background {
+    height: 100%;
+    width: 100%;
+    float: left;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: none;
+    position: fixed;
+    
+    object-fit: cover; /* маштабирует картинку так чтоб ее аспекное соотношение сохранялось  */  
+    z-index: -1; /* уменьшает порядок наложения, чтоб бг в самом низу был */
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fade-in {
+    animation: fadeIn 500ms ease-in-out; /* анимация начнется медленно, ускорится в середине и замедлится к концу. */ 
+}
